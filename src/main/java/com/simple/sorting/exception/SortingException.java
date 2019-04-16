@@ -1,4 +1,4 @@
-package com.simple.sorting.service;
+package com.simple.sorting.exception;
 
 /**
  *
@@ -9,6 +9,4 @@ public class SortingException extends Exception{
     public SortingException(String message) {
         super(message);
     }
-    
-    
 }

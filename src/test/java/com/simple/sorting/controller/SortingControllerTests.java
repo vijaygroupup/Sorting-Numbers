@@ -1,4 +1,4 @@
-package com.simple.sorting.service.controller;
+package com.simple.sorting.controller;
 
 import java.net.URI;
 import java.net.URISyntaxException;

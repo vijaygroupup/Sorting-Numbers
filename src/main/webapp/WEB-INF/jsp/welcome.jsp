@@ -7,7 +7,7 @@
     <head><title>Sort Numbers</title></head>
     <body >
         <h1>Sorting the Numbers</h1>
-        <div style="color: red">${exception}</div>
+        <div style="color: red">${error}</div>
         <form action="/sort" method="POST">
             <table>
                 <tr>

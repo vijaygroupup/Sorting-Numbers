@@ -2,7 +2,7 @@ package com.simple.sorting.controller;
 
 
 import com.simple.sorting.formmodel.SortingResponse;
-import com.simple.sorting.service.SortingException;
+import com.simple.sorting.exception.SortingException;
 import com.simple.sorting.service.SortingImpl;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +17,8 @@ public class SortingController {
 
     @Autowired
     public SortingImpl numberSortingImpl;
+    
+    public String ERROR_MESSAGE="Please check the input and try again";
 
     @RequestMapping
     public String welcome() {
@@ -32,7 +34,7 @@ public class SortingController {
         model.put("timeTaken", sortingResponse.getTimeTaken());
         model.put("positionChanged", sortingResponse.getNoOfPositionChanged());
         }catch(SortingException se){
-            model.put("exception", "Please try again");
+            model.put("error", ERROR_MESSAGE);
         }
         return "welcome";
     }

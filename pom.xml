@@ -12,12 +12,6 @@
     <name>Sorting</name>
     <description>Simple program for Sorting numbers</description>
     <version>1.0-SNAPSHOT</version>
-    <properties>
-        <main.basedir>${basedir}/../..</main.basedir>
-        <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,13 +54,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <useSystemClassLoader>false</useSystemClassLoader>
-                </configuration>
             </plugin>
         </plugins>
     </build>

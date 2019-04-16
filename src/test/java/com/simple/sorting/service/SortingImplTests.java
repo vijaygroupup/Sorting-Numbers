@@ -1,5 +1,6 @@
 package com.simple.sorting.service;
 
+import com.simple.sorting.exception.SortingException;
 import com.simple.sorting.dao.SortingHistoryDao;
 import com.simple.sorting.formmodel.SortingResponse;
 import org.junit.Assert;
