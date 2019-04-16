@@ -4,11 +4,9 @@ import com.simple.sorting.exception.SortingException;
 import com.simple.sorting.dao.SortingHistoryDao;
 import com.simple.sorting.formmodel.SortingResponse;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
-import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -22,11 +20,6 @@ public class SortingImplTests {
 
     @InjectMocks
     SortingImpl sortingImpl;
-
-    @Before
-    public void init() {
-        MockitoAnnotations.initMocks(this);
-    }
 
     @Test
     public void testSortNumberInAsc() throws SortingException {
