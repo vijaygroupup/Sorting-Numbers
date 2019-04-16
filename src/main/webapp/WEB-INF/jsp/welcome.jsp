@@ -18,7 +18,7 @@
         </form>
          <table >
             <tr>
-                <td>Given Input to Sort     : </td>
+                <td>Given Input     : </td>
                 <td>${input}</td>
             </tr>
 
@@ -27,7 +27,7 @@
                 <td>${output}</td>
             </tr>
             <tr>
-                <td>Time taken to sort in ms: </td>
+                <td>Time taken in milliseconds: </td>
                 <td>${timeTaken}</td>
             </tr>
             <tr>
