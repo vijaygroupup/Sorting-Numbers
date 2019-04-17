@@ -1,4 +1,4 @@
-package com.simple.sorting.formmodel;
+package com.simple.sorting.form;
 
 import java.util.List;
 
@@ -8,36 +8,35 @@ import java.util.List;
  */
 public class SortingResponse {
     
-    List inputRequest;
-    List outputResponse;
-    List noOfPositionChanged;
-    long timeTaken;
+    private List<Integer> inputRequest;
+    private List<Integer> outputResponse;
+    private List<String> noOfPositionChanged;
+    private long timeTaken;
 
-    public List getInputRequest() {
+    public List<Integer> getInputRequest() {
         return inputRequest;
     }
 
-    public void setInputRequest(List inputRequest) {
+    public void setInputRequest(List<Integer> inputRequest) {
         this.inputRequest = inputRequest;
     }
 
-    public List getOutputResponse() {
+    public List<Integer> getOutputResponse() {
         return outputResponse;
     }
 
-    public void setOutputResponse(List outputResponse) {
+    public void setOutputResponse(List<Integer> outputResponse) {
         this.outputResponse = outputResponse;
     }
 
-    public List getNoOfPositionChanged() {
+    public List<String> getNoOfPositionChanged() {
         return noOfPositionChanged;
     }
 
-    public void setNoOfPositionChanged(List noOfPositionChanged) {
+    public void setNoOfPositionChanged(List<String> noOfPositionChanged) {
         this.noOfPositionChanged = noOfPositionChanged;
     }
 
-  
     public long getTimeTaken() {
         return timeTaken;
     }

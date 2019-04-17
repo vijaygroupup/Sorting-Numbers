@@ -1,9 +1,9 @@
 package com.simple.sorting.controller;
 
 
-import com.simple.sorting.formmodel.SortingResponse;
+import com.simple.sorting.form.SortingResponse;
 import com.simple.sorting.exception.SortingException;
-import com.simple.sorting.service.SortingImpl;
+import com.simple.sorting.service.ISorting;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class SortingController {
 
     @Autowired
-    public SortingImpl numberSortingImpl;
+    public ISorting iSorting;
     
     public String ERROR_MESSAGE="Please check the input and try again";
 
@@ -28,7 +28,7 @@ public class SortingController {
     @RequestMapping(path = "sort",consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public String processSort(@RequestParam String sortingRequest,Map<String, Object> model ) throws SortingException {
         try{
-        SortingResponse sortingResponse= numberSortingImpl.sortNumberInAsc(sortingRequest);
+        SortingResponse sortingResponse= iSorting.sortNumberInAsc(sortingRequest);
         model.put("input", sortingResponse.getInputRequest());
         model.put("output", sortingResponse.getOutputResponse());
         model.put("timeTaken", sortingResponse.getTimeTaken());
